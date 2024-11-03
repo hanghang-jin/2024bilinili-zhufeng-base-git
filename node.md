@@ -21,3 +21,12 @@
    > - git commit -m"描述信息：本次提交的信息" 提交到历史区(加描述信息)
    > - git log 查看历史版本
    > - git reflog 查看历史版本(包含回滚信息)
+4. 把本地仓库提交到远程仓库
+   > 1. 建立本地仓库和远程仓库的连接
+   - git remote -v ==> (查看本地仓库和那些远程仓库保持连接)
+   - git remote add origin [仓库地址] ==> (添加远程仓库地址)(origin 可以修改不是固定的)
+   - git remote rm origin ==> 删除关联信息(origin 创建关联时取的名称)
+   - git pull origin master ==> 提交之前先拉取代码(origin 连接的 master 分支代码)
+   - git push origin master ==> 把本地代码提交到远程仓库(origin 连接的 master 分支代码)(可能需要输入用户名密码)
+   - git config --global http.sslVerify false ==> (unable to get local issuer certificate)
+   - (OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0) 连接失败 ==> (watt toolkit)安装加速器
