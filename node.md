@@ -30,3 +30,4 @@
    - git push origin master ==> 把本地代码提交到远程仓库(origin 连接的 master 分支代码)(可能需要输入用户名密码)
    - git config --global http.sslVerify false ==> (unable to get local issuer certificate)
    - (OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0) 连接失败 ==> (watt toolkit)安装加速器
+   - git clone [远程 git 仓库地址] [别名：可以不设置，默认仓库名] ==> 克隆项目到本地
